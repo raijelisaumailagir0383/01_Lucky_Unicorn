@@ -2,6 +2,7 @@
 # Loop question sa that it repeats until valid number is entered
 # Make code recyclable
 
+
 # function goes here
 def intcheck(question, low, high):
     valid = False
@@ -9,7 +10,7 @@ def intcheck(question, low, high):
         error = "Whoops! Please enter an integer between {} and {}".format(low,high )
 
         try:
-            response = int(input("Enter an integer between {} and {}: ".format(low, high)))
+            response = int(input(question))
 
             if low <= response <= high:
                 return response
@@ -22,10 +23,5 @@ def intcheck(question, low, high):
 
 # main routine goes here
 
-valid = False
-while not valid:
-    error = "Whoops! Please enter an integer between 1 and 10: "))
-
-    try:
-        response = int (input("Enter an ineteger between 1 and 10: "))
+number = intcheck("Number: ", 1, 10)
 

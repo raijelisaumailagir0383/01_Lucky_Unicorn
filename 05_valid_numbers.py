@@ -4,6 +4,7 @@
 
 valid = False
 while not valid:
+
     error = "Whoops! Please enter an integer between 1 and 10"
 
     try:
